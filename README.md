@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+# Financial Data Filter App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based web application for visualizing and analyzing Apple Inc.'s financial data using the Financial Modeling Prep API.
 
-## Available Scripts
+Live Demo: [https://financial-filter-fiy7sr7di-tommy-boyajians-projects.vercel.app/](https://financial-filter-fiy7sr7di-tommy-boyajians-projects.vercel.app/)
 
-In the project directory, you can run:
+Screenshot: ![alt text](dashboard.png)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Display Apple Inc.'s annual income statements
+- Interactive data filtering:
+  - Date range selection
+  - Revenue range filtering
+  - Net Income range filtering
+- Sortable data columns
+- Real-time data visualization
+- Responsive design for both desktop and mobile
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- React.js
+- Tailwind CSS
+- Axios for API requests
+- React DatePicker
+- Financial Modeling Prep API
+- HeroIcons
+- Vercel for deployment
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+1. Clone the repository:
+   ```bash
+   git clone [your-repository-url]
+   cd financial-filter-app
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Create a `.env` file in the root directory and add your API key:
+   ```
+   REACT_APP_FMP_API_KEY=your_api_key_here
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Start the development server:
+   ```bash
+   npm start
+   ```
 
-### `npm run eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+After starting the development server:
+1. Open http://localhost:3000 in your browser
+2. Use the date range picker to filter by specific time periods
+3. Enter minimum and maximum values for Revenue and Net Income filters
+4. Click on column headers to sort the data
+5. View the formatted financial data in the table
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## API Configuration
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This project uses the Financial Modeling Prep API. To use the application:
+1. Sign up for an API key at [Financial Modeling Prep](https://site.financialmodelingprep.com/)
+2. Add your API key to the `.env` file
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Project Structure
 
-## Learn More
+```
+financial-filter-app/
+├── src/
+│   ├── components/
+│   │   ├── DataTable.jsx
+│   │   └── FilterSection.jsx
+│   ├── services/
+│   │   └── api.js
+│   └── App.js
+├── public/
+└── README.md
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Deployment
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This app is deployed using Vercel. To deploy your own version:
 
-### Code Splitting
+1. Fork this repository
+2. Sign up for Vercel
+3. Import your repository
+4. Add your environment variables in Vercel:
+   - REACT_APP_FMP_API_KEY=your_api_key
+5. Deploy!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Development
 
-### Analyzing the Bundle Size
+To work on this project:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Fork the repository
+2. Create a new branch for your feature
+3. Make your changes
+4. Submit a pull request
 
-### Making a Progressive Web App
+## Future Enhancements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Add more financial metrics
+- Implement data visualization charts
+- Add export functionality
+- Include more companies
+- Add user authentication
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[MIT License](LICENSE)
