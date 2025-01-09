@@ -2,7 +2,7 @@
 
 A React-based web application for visualizing and analyzing Apple Inc.'s financial data using the Financial Modeling Prep API.
 
-Live Demo: [https://financial-filter-fiy7sr7di-tommy-boyajians-projects.vercel.app/](https://financial-filter-fiy7sr7di-tommy-boyajians-projects.vercel.app/)
+Live Demo: https://financial-filter-app.vercel.app/
 
 Screenshot: ![alt text](dashboard.png)
 
@@ -31,7 +31,7 @@ Screenshot: ![alt text](dashboard.png)
 
 1. Clone the repository:
    ```bash
-   git clone [your-repository-url]
+   git clone https://github.com/rcksssss/financial-filter-app.git
    cd financial-filter-app
    ```
 
