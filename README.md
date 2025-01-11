@@ -107,7 +107,3 @@ To work on this project:
 - Add export functionality
 - Include more companies
 - Add user authentication
-
-## License
-
-[MIT License](LICENSE)
